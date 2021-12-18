@@ -3,7 +3,7 @@ const glitch = '//cdn.toofook.com/my-blog/glitch.png'
 const mail = '//cdn.toofook.com/my-blog/mail.png'
 const smile = '//cdn.toofook.com/my-blog/smile.png'
 
-const sup = '//cdn.toofook.com/my-blog/sup.png'
+const sup = 'public/iamges/sup.png'
 const readme = '//cdn.toofook.com/my-blog/readme.png'
 const msg = '//cdn.toofook.com/my-blog/msg.png'
 const setting = '//cdn.toofook.com/my-blog/setting.png'

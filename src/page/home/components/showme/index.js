@@ -37,12 +37,12 @@ export default class ShowMe extends Component{
         <ul className={Css.settBox}>
           <li>
             <div className={Css.glitch}>
-              <img src={homeImg.glitch} alt=""/>
+              <img src="./img.png" alt=""/>
             </div>
           </li>
-          <li>Mr.Ou Personal Web</li>
-          <li>v2.1.0</li>
-          <li className={Css.settLink}><a className='needsclick' onClick={this.toAbout}>View More</a></li>
+          <li>这是我们的网站</li>
+          <li>v0.0.1</li>
+          <li className={Css.settLink}><a className='needsclick' onClick={this.toAbout}>查看更多</a></li>
           <li><hr align='center' width='60%' style={{margin:'18px auto'}} color='#b99f51' size="1"/></li>
           <li>{this.props.other.user.email
               ?<em>{this.props.other.user.email}</em>

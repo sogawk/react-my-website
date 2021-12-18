@@ -14,7 +14,7 @@ export function Photo(){
   return (
     <Pop  
       noClose={true}
-      title="Phonto"
+      title="照片"
       type="main"
       unmove={true}
     >
@@ -30,15 +30,15 @@ export function Mail(){
   return (
     <Pop  
       noClose={true}
-      title="Mail"
+      title="邮箱"
       type="pink"
       unmove={true}
     >
       <div className={Css.img}>
         <img src={aboutImg.imail} alt=""/>
       </div> 
-      <h3>arthur.ou@foxmail.com</h3>
-      <a href="mailto:arthur.ou@foxmail.com" className={Css.linkIcon}></a>
+      {/*<h3>arthur.ou@foxmail.com</h3>*/}
+      {/*<a href="mailto:arthur.ou@foxmail.com" className={Css.linkIcon}></a>*/}
     </Pop>
   )
 }
@@ -49,7 +49,7 @@ export class Introduce extends Component{
     return(
       <Pop  
         noClose={true}
-        title="About Me"
+        title="关于我们"
         type="light"
         unmove={true}
       >
@@ -67,14 +67,14 @@ export function Git(){
   return (
     <Pop  
       noClose={true}
-      title="GitHub"
+      title="代码仓库"
       type="violet"
       unmove={true}
     >
       <div className={Css.img}>
         <img src={aboutImg.igit} alt=""/>
       </div> 
-      <h3>https://github.com/ArthurYung</h3>
+      {/*<h3></h3>*/}
       <a href="https://github.com/ArthurYung" rel="external" target="_blank" className={Css.linkIcon}></a>
     </Pop>
   )
@@ -85,14 +85,14 @@ export function WeiChart(){
   return (
     <Pop  
       noClose={true}
-      title="WeChat"
+      title="微信"
       type="wathet"
       unmove={true}
     >
       <div className={Css.img}>
         <img src={aboutImg.icode} alt=""/>
       </div> 
-      <h3>oyyc270079245</h3> 
+      {/*<h3>oyyc270079245</h3> */}
     </Pop>
   )
 }
@@ -103,7 +103,7 @@ export function MyAdd(){
   return (
     <Pop  
       noClose={true}
-      title="Where"
+      title="地点"
       type="wathet"
       unmove={true}
     >
@@ -120,7 +120,7 @@ export function OurLink(){
   return (
     <Pop  
       noClose={true}
-      title="Friends"
+      title="朋友"
       type="pink"
       unmove={true}
     >

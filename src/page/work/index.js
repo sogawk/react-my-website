@@ -16,19 +16,19 @@ export default class Work extends Component{
     super();
     this.state={
     desginFigu:[
-        { src: workIcon.logo1, text: '优品养车logo', isShow: false, child: desgin.logo1,type:'white'},
-        { src: workIcon.logo2, text: '优品养车logo', isShow: false, child: desgin.logo2,type:'white'},
-        { src: workIcon.chick, text: '老思鸡H5', isShow: false, child: desgin.chicken,type:'white'},
-        { src: workIcon.moneky, text: '校招H5', isShow: false, child: desgin.monky,type:'white'}
+        { src: workIcon.logo1, text: '记录试试', isShow: false, child: desgin.logo1,type:'white'},
+        { src: workIcon.logo2, text: '记录啵啵', isShow: false, child: desgin.logo2,type:'white'},
+        { src: workIcon.chick, text: '点一点', isShow: false, child: desgin.chicken,type:'white'},
+
       ],
     codeFigu:
     [
-        { src: workIcon.game, text: '五子棋', isShow: false, child: code.game,type:'white'},
-        { src: workIcon.jquo, text: 'jQuo', isShow: false, child: code.jquo,type:'white'},
-        { src: workIcon.pictring, text: 'pictring', isShow: false, child: code.pictring,type:'white'},
-        { src: workIcon.chick, text: '老思鸡H5', isShow: false, child: code.chicken,type:'white'},
-        { src: workIcon.vue, text: 'vue-pictring', isShow: false, child: code.vuePictring,type:'white'},
-        { src: workIcon.blog, text: 'My Blog', isShow: false, child: code.myblog,type:'white'},
+        // { src: workIcon.game, text: '五子棋', isShow: false, child: code.game,type:'white'},
+        // { src: workIcon.jquo, text: 'jQuo', isShow: false, child: code.jquo,type:'white'},
+        // { src: workIcon.pictring, text: 'pictring', isShow: false, child: code.pictring,type:'white'},
+        // { src: workIcon.chick, text: '老思鸡H5', isShow: false, child: code.chicken,type:'white'},
+        // { src: workIcon.vue, text: 'vue-pictring', isShow: false, child: code.vuePictring,type:'white'},
+        // { src: workIcon.blog, text: 'My Blog', isShow: false, child: code.myblog,type:'white'},
     ],
     switchin:true
     }
@@ -85,13 +85,13 @@ export default class Work extends Component{
     return (
       <main className={"page "+scroll}>
         <div style={{height:'auto',paddingBottom:'6rem'}} className="app-center">
-          <ListCompon style={type!=="code"} title="Desgin" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
-          <ListCompon style={type==="code"} title="Code" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
+          <ListCompon style={type!=="code"} title="日常记录" figures={this.state.desginFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
+          <ListCompon style={type==="code"} title="滴滴滴" figures={this.state.codeFigu} shows={this.show.bind(this)}  close={this.close.bind(this)}/>
           <div onClick={this.toAbout} className={more}>
             <span className={moreIcon}>
               <i></i>
             </span>
-            <span className="needsclick">VIEW MORE</span>
+            <span className="needsclick">查看更多</span>
           </div>
           {this.state.switchin?<Switch type="enter" callback={this.switchOut.bind(this)}/>:''}
         </div>

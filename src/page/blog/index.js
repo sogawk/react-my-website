@@ -26,7 +26,7 @@ export default class Blog extends Component {
   }
   componentWillMount() {
     this.getArticleList()
-    this.getUserInfo()
+    // this.getUserInfo()
   }
   changeArticle(article) {
     this.refs.articleComponent.resetScrollTop()
@@ -50,16 +50,62 @@ export default class Blog extends Component {
       showLogin: true,
       lookPage: true,
       currentArticle: {
-        title: 'Github授权',
+        title: '刘语',
         needLoginGithub: true
       }
     })
   }
   async getArticleList() {
     try {
-      const { data } = await Axios({
-        url: 'https://api.github.com/repos/ArthurYung/my-voice/issues'
-      })
+      const {data} = "[\n" +
+      "  {\n" +
+      "    \"url\": \"#\",\n" +
+      "    \"repository_url\": \"#\",\n" +
+      "    \"labels_url\": \"#\",\n" +
+      "    \"comments_url\": \"#\",\n" +
+      "    \"events_url\": \"#\",\n" +
+      "    \"html_url\": \"#\",\n" +
+      "    \"id\": 841694029,\n" +
+      "    \"node_id\": \"MDU6SXNzdWU4NDE2OTQwMjk=\",\n" +
+      "    \"number\": 13,\n" +
+      "    \"title\": \"刘言刘语\",\n" +
+      "    \"user\": {\n" +
+      "\n" +
+      "    },\n" +
+      "    \"labels\": [\n" +
+      "\n" +
+      "    ],\n" +
+      "    \"state\": \"open\",\n" +
+      "    \"locked\": false,\n" +
+      "    \"assignee\": null,\n" +
+      "    \"assignees\": [\n" +
+      "\n" +
+      "    ],\n" +
+      "    \"milestone\": null,\n" +
+      "    \"comments\": 1,\n" +
+      "    \"created_at\": \"2021-03-26T07:58:05Z\",\n" +
+      "    \"updated_at\": \"2021-04-29T09:47:31Z\",\n" +
+      "    \"closed_at\": null,\n" +
+      "    \"author_association\": \"OWNER\",\n" +
+      "    \"active_lock_reason\": null,\n" +
+      "    \"body\": \"#哎呦喂。\\r\\n\\r\\n\",\n" +
+      "    \"reactions\": {\n" +
+      "      \"url\": \"#\",\n" +
+      "      \"total_count\": 0,\n" +
+      "      \"+1\": 0,\n" +
+      "      \"-1\": 0,\n" +
+      "      \"laugh\": 0,\n" +
+      "      \"hooray\": 0,\n" +
+      "      \"confused\": 0,\n" +
+      "      \"heart\": 0,\n" +
+      "      \"rocket\": 0,\n" +
+      "      \"eyes\": 0\n" +
+      "    },\n" +
+      "    \"timeline_url\": \"#\",\n" +
+      "    \"performed_via_github_app\": null\n" +
+      "  }\n" +
+      "\n" +
+      "]\n";
       this.setState({
         articles: data,
         currentArticle: data[0]
@@ -69,7 +115,7 @@ export default class Blog extends Component {
     }
   }
   async getUserInfo() {
-    const { data } = await Axios({ url: 'https://api.github.com/user'})
+    const { data } = await Axios({ url: '#'})
     if (data) {
       this.resetUserInfo(data)
     }
@@ -94,7 +140,7 @@ export default class Blog extends Component {
         <div className={ blogClassNames }>
           <Pop
             noClose={true}
-            title="Blogs"
+            title="刘言"
             type="white"
             unmove={true}
             class={blogCss['blog-menu-box']}

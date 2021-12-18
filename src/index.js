@@ -47,8 +47,9 @@ function reactloading() {
   const styles = "scaleX(" + (imgloadindex / (imgNum - 3)).toFixed(2) + ")";
   loadingDiv.style[useTransform] = styles;
   if (imgloadindex >= imgNum - 1) {
-    ReactDOM.render(<App />, document.getElementById("root"));
+
     loadingDiv = myloadingimgs = useTransform = imgloadindex = imgNum = null;
   }
 }
+ReactDOM.render(<App />, document.getElementById("root"));
 registerServiceWorker();

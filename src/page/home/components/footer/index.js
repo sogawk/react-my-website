@@ -5,15 +5,15 @@ import {footer} from '../../home.scss'
  */
 export default function TextNode () {
   const date = new Date()
-  const dateValue = " Date = " + date.getFullYear()+'/'+(+date.getMonth()+1)+'/'+date.getDate()
+  const dateValue = " " + date.getFullYear()+'/'+(+date.getMonth()+1)+'/'+date.getDate()
     return (
       <footer className={footer}>
         <ul>
-          <li><b>const</b>{dateValue}</li>
-          <li><b>const</b> UseTime = 4s</li>
-          <li><b>const</b> Add=广东省深圳市</li>
-          <li>WWW.VANOC.TOP</li>
-          <li><a target="_blank" href="http://www.miitbeian.gov.cn/">粤ICP备17162184号-2</a></li>
+          <li><b>日期</b>{dateValue}</li>
+          <li><b>const</b> 哎呦喂</li>
+          <li><b>YAOYAO</b> </li>
+          <li>WWW.YAOYAOMUA.COM</li>
+          <li><b>祝你快乐</b></li>
         </ul>
       </footer>
     )

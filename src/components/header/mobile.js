@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import history from '@/utils/history'
 const  navlist = [
-        {text:'HOME',herf:'/'},
-        {text:'BLOG',herf:'/blog'},
-        {text:'WORK',herf:'/work'},
-        {text:'ABOUT',herf:'/about'}
+        {text:'主页',herf:'/'},
+        {text:'刘言刘语',herf:'/blog'},
+        {text:'还没想好的模块',herf:'/404'},
+        {text:'关于yaoyao',herf:'/about'}
       ]
 const HashIndex = ()=>{
     let paths = []
